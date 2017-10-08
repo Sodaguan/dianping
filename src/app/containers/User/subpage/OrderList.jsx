@@ -4,7 +4,6 @@ import PureRenderMixin from "react-addons-pure-render-mixin"
 import "./style.less"
 
 import {getOrderListData, postComment} from "../../../fetch/user/orderlist"
-import LoadMore from "../../../components/LoadMore/index"
 import OrderListComponent from "../../../components/OrderList/index"
 
 class OrderList extends React.Component {

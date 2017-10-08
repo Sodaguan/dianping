@@ -18,12 +18,12 @@ const obj2params = (obj) => {
 // 发送 post 请求
 const post = (url, paramsObj) => {
     const result = fetch(url, {
-        method: 'POST',
         credentials: 'include',
         headers: {
             'Accept': 'application/json, text/plain, */*',
             'Content-Type': 'application/x-www-form-urlencoded'
         },
+        method: 'POST',
         body: obj2params(paramsObj)
     });
 
